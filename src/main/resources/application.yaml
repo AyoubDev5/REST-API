@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: projet
+  datasource:
+    username: ayoub
+    url: jdbc:postgresql://localhost:5432/HomeTeam
+    password: ayoub
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
